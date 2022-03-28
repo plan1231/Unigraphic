@@ -14,7 +14,7 @@
 //#define LCDSIZE_Y       480  // display Y pixels
 
 
-TFT_MIPI::TFT_MIPI(proto_t displayproto,PinName* buspins, PinName CS, PinName reset, PinName DC, PinName WR, PinName RD, const char* name, const int LCDSIZE_X = 320, const int LCDSIZE_Y=480)
+TFT_MIPI::TFT_MIPI(proto_t displayproto,PinName* buspins, PinName CS, PinName reset, PinName DC, PinName WR, PinName RD, const char* name, const int LCDSIZE_X, const int LCDSIZE_Y)
     : TFT(displayproto, buspins, CS, reset, DC, WR, RD, LCDSIZE_X, LCDSIZE_Y, name)
 {
     hw_reset();
